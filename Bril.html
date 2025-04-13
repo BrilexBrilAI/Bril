@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bril AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="Favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="Images/Logo dark.svg" alt="Brilex Logo" />
+      </div>
+      <div class="menu" id="navbar">
+        <a href="https://brilex.shop/">Home</a>
+        <a href="https://brilex.shop/categories">All Category</a>
+        <a href="https://brilex.shop/blog">Blog</a>
+        <a href="https://brilex.shop/contact-us">Contact</a>
+      </div>
+      <a href="/Bril" class="cta-button01">Bril AI</a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+    <div class="hero">
+      <h1>Bril – AI Search Assistant for Smarter Shopping</h1>
+      <p>Revolutionize your eCommerce experience with NVIDIA Riva-powered text-based search</p>
+      <a href="https://brilex.shop/contact-us" class="cta-button02">30 days free trial</a>
+    </div>
+
+    <div class="container" id="features">
+      <h2>Key Features</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="Images/F01.png" alt="Feature 1" class="grid-image" />
+          <br /><strong>Natural Language Product Search </strong> <br>
+          <p>Bril lets users search using everyday language, making it easier to find products by name, brand, price, or color effortlessly.</p>
+        </div>
+        <div class="grid-item">          
+          <img src="Images/F03.png" alt="Feature 2" class="grid-image" />
+          <br /><strong>Real-Time Suggestions </strong> <br>
+          <p>Delivers instant product suggestions based on user input, improving shopping experience by quickly guiding customers to relevant and matching items.</p>
+        </div>
+        <div class="grid-item">
+          <img src="Images/F02.png" alt="Feature 3" class="grid-image" />
+          <br /><strong>NVIDIA Riva-Powered Intelligence </strong> <br>
+          <p>Powered by NVIDIA Riva, Bril processes queries with speed and accuracy, enabling intelligent search with natural understanding of user preferences.</p>
+        </div>
+        <div class="grid-item">
+          <img src="Images/F04.png" alt="Feature 4" class="grid-image" />
+          <br /><strong>Demo-Ready with Sample Products </strong> <br>
+          <p>Bril includes a built-in demo dataset, allowing businesses to showcase advanced AI search functionality without needing a fully integrated product backend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-solution">
+      <h2>Bril - AI Product Search</h2>
+      <div class="assistant-container">
+        <div class="input-section">
+          <input
+            type="text"
+            id="textInput"
+            placeholder="Type your query (e.g :10000 or Samsung)"
+          />
+          <button onclick="submitTextSearch()">Search Product</button>
+        </div>
+        <div class="results" id="results"></div>
+      </div>
+    </div>
+
+    <div class="container" id="how-it-works">
+      <h2>How It Works</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="step-number">1</div>
+          <br /><strong>User Inputs Query</strong> <br /><p>Customers type their search using natural language, like "10,000 or Samsung" — no need for exact product names or codes.</p>
+        </div>
+        <div class="grid-item">
+          <div class="step-number">2</div>
+          <br /><strong>Bril Understands Context</strong> <br /><p>Bril uses NVIDIA Riva’s natural language processing to understand user intent, filtering through price, brand, color, and more.</p>
+        </div>
+        <div class="grid-item">
+          <div class="step-number">3</div>
+          <br /><strong>Smart Product Matching</strong> <br /><p>Bril quickly analyzes available items and selects the most relevant matches from the product database using AI-powered logic.</p>
+        </div>
+        <div class="grid-item">
+          <div class="step-number">4</div>
+          <br /><strong>Instant Results Displayed</strong> <br /><p>Relevant product suggestions are displayed in real time, helping users browse and buy faster with a smoother shopping experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section-wrapper" id="faq">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <a href="javascript:void(0)" onclick="toggleFAQ(this)">
+            <span class="plus-icon">+</span>
+            <strong>How does Bril improve the shopping experience?</strong>
+          </a>
+          <div class="faq-item-content">
+            Bril uses AI to understand search queries and instantly suggests the most relevant products based on user intent.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <a href="javascript:void(0)" onclick="toggleFAQ(this)">
+            <span class="plus-icon">+</span>
+            <strong>Can Bril understand different types of queries?</strong>
+          </a>
+          <div class="faq-item-content">
+            Yes, Bril handles product searches based on price, brand, category, or even color using natural language understanding.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <a href="javascript:void(0)" onclick="toggleFAQ(this)">
+            <span class="plus-icon">+</span>
+            <strong>Does Bril require voice input?</strong>
+          </a>
+          <div class="faq-item-content">
+            No, Bril supports both voice and text input — users can choose their preferred method to search for products.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <a href="javascript:void(0)" onclick="toggleFAQ(this)">
+            <span class="plus-icon">+</span>
+            <strong>Is Bril suitable for any type of e-commerce store?</strong>
+          </a>
+          <div class="faq-item-content">
+            Absolutely! Bril is customizable and can be integrated into any e-commerce platform, regardless of the industry or product type.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-image">
+        <img src="Images/faq (1).png" alt="FAQ Illustration" />
+      </div>
+    </div>
+
+    <div class="cta">
+      <h1>Ready to Revolutionize Your Shopping Experience?</h1>
+      <p>
+        Experience intelligent product discovery with <strong>Bril</strong>, powered by
+        <strong>NVIDIA Riva</strong>. Get started today!
+      </p>
+      <a href="https://brilex.shop/contact-us" class="cta-button02">Request the Demo ($109.00)</a>
+    </div>
+    
+
+    <div class="footer">
+      <div class="footer-column logo-column">
+        <img
+          src="Images/Logo light.svg"
+          alt="RisoltoApp Logo"
+          class="footer-logo"
+        />
+        <p
+          class="elevator-pitch"
+          style="text-align: justify; margin-right: 40px"
+        >
+        Shop your favorite gadgets and essentials anytime, anywhere. We offer top tech, great deals, and a smooth shopping experience all in one trusted, easy-to-use place.
+        </p>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/Brilex.shop/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://x.com/BrilexShop"
+            class="social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/brilex-shop/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@Brilexshop"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.quora.com/profile/Brilex-Shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+            aria-label="Pinterest"
+            ><i class="fab fa-pinterest-p"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-column quicklinks-column">
+        <h3 class="yellow">Quick Links</h3>
+        <a href="https://brilex.shop/" class="white">Home</a>
+        <a href="https://brilex.shop/categories" class="white">All Category</a>
+        <a href="https://brilex.shop/blog" class="white">Blog</a>
+        <a href="https://brilex.shop/contact-us" class="white">Contact</a>
+      </div>
+      <div class="footer-column legal-column">
+        <h3 class="yellow">Legal</h3>
+        <a href="https://brilex.shop/privacy-policy" class="white"
+          >Privacy Policy</a
+        >
+        <a href="https://brilex.shop/terms" class="white"
+          >Terms & Conditions</a
+        >
+      </div>
+      <div class="footer-column newsletter-column">
+        <h3 class="yellow">Join Our Newsletter</h3>
+        <p class="white">Stay updated with our news and updates</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="yellow-button">Subscribe</button>
+        </form>
+      </div>
+      <div class="copyright">
+        &copy; 2025
+        <a
+          href="https://brilex.shop/"
+          target="_blank"
+          style="color: inherit; text-decoration: none; color: #1DCD9F"
+          >Brilex.shop</a
+        >. All Rights Reserved.
+      </div>
+    </div>
+
+    <script>
+      function toggleFAQ(element) {
+        var faqItem = element.parentElement;
+        faqItem.classList.toggle("active");
+      }
+    </script>
+    <script>
+      const sampleProducts = [
+        { name: 'Apple iPhone 15', brand: 'Apple', price: '350000' },
+        { name: 'Samsung Galaxy S23', brand: 'Samsung', price: '320000' },
+        { name: 'Google Pixel 8', brand: 'Google', price: '300000' },
+        { name: 'OnePlus 11', brand: 'OnePlus', price: '280000' },
+        { name: 'Xiaomi Mi 13', brand: 'Xiaomi', price: '250000' },
+        { name: 'Sony Xperia 1 IV', brand: 'Sony', price: '310000' },
+        { name: 'Oppo Find X5 Pro', brand: 'Oppo', price: '270000' },
+        { name: 'Motorola Edge 30', brand: 'Motorola', price: '230000' },
+        { name: 'Realme GT 2 Pro', brand: 'Realme', price: '220000' },
+        { name: 'Asus ROG Phone 6', brand: 'Asus', price: '290000' },
+        
+        { name: 'Apple MacBook Air (M2)', brand: 'Apple', price: '420000' },
+        { name: 'Dell XPS 13', brand: 'Dell', price: '390000' },
+        { name: 'HP Spectre x360', brand: 'HP', price: '370000' },
+        { name: 'Lenovo ThinkPad X1 Carbon', brand: 'Lenovo', price: '400000' },
+        { name: 'Razer Blade 15', brand: 'Razer', price: '450000' },
+        { name: 'Asus ZenBook 14', brand: 'Asus', price: '350000' },
+        { name: 'Microsoft Surface Laptop 5', brand: 'Microsoft', price: '410000' },
+        { name: 'Acer Predator Helios 300', brand: 'Acer', price: '380000' },
+        { name: 'Samsung Galaxy Book Pro 360', brand: 'Samsung', price: '360000' },
+        { name: 'Gigabyte AORUS 15P', brand: 'Gigabyte', price: '400000' },
+
+        { name: 'Samsung QN90B Neo QLED 4K TV', brand: 'Samsung', price: '450000' },
+        { name: 'LG OLED C1 Series 4K TV', brand: 'LG', price: '470000' },
+        { name: 'Sony Bravia XR A80J OLED TV', brand: 'Sony', price: '490000' },
+        { name: 'TCL 6-Series R635 4K TV', brand: 'TCL', price: '350000' },
+        { name: 'Vizio M-Series Quantum 4K TV', brand: 'Vizio', price: '340000' },
+        { name: 'Hisense U8H Quantum Series 4K TV', brand: 'Hisense', price: '330000' },
+        { name: 'Philips Ambilight 4K UHD TV', brand: 'Philips', price: '360000' },
+        { name: 'Sharp AQUOS 4K TV', brand: 'Sharp', price: '310000' },
+        { name: 'Sceptre 65-inch 4K Ultra HD LED TV', brand: 'Sceptre', price: '280000' },
+        { name: 'Xiaomi Mi TV Q1 75"', brand: 'Xiaomi', price: '300000' },
+
+        { name: 'Apple Watch Series 9', brand: 'Apple', price: '150000' },
+        { name: 'Samsung Galaxy Watch 6', brand: 'Samsung', price: '130000' },
+        { name: 'Garmin Forerunner 945', brand: 'Garmin', price: '140000' },
+        { name: 'Fitbit Charge 5', brand: 'Fitbit', price: '90000' },
+        { name: 'Amazfit GTR 4', brand: 'Amazfit', price: '85000' },
+        { name: 'Huawei Watch GT 3 Pro', brand: 'Huawei', price: '120000' },
+        { name: 'Withings Steel HR Sport', brand: 'Withings', price: '95000' },
+        { name: 'Fossil Gen 6', brand: 'Fossil', price: '88000' },
+        { name: 'Oura Ring Generation 3', brand: 'Oura', price: '110000' },
+        { name: 'Suunto 9 Peak Pro', brand: 'Suunto', price: '125000' }
+      ];
+
+  
+      async function submitTextSearch() {
+        const query = document.getElementById('textInput').value.toLowerCase();
+        const results = sampleProducts.filter(product =>
+          product.name.toLowerCase().includes(query) ||
+          product.brand.toLowerCase().includes(query) ||
+          product.price.includes(query)
+        );
+        displayResults(results);
+      }
+  
+      function displayResults(data) {
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '';
+        if (!data || data.length === 0) {
+          resultsDiv.textContent = 'No matching products found.';
+          return;
+        }
+        data.forEach(item => {
+          const div = document.createElement('div');
+          div.textContent = `${item.name} - ${item.price} - ${item.brand}`;
+          resultsDiv.appendChild(div);
+        });
+      }
+    </script>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.getElementById("navbar");
+
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
